@@ -5,7 +5,8 @@ It hooks into `knife spork promote` command, checks if the local environment fil
 
 ## Installation
 
-First, copy `check_diff.rb` to your `custom_plugin_path` defined in spork config.
+1. `chef gem install -N hashdiff`
+2. Copy `check_diff.rb` to your `custom_plugin_path` defined in spork config.
 
 Then update your `spork-config.yml`:
 ```
