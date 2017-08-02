@@ -44,7 +44,7 @@ module KnifeSpork
           diff = HashDiff.diff(remote_environment, local_environment)
           next if diff.empty?
 
-          message = "Local environment is different from remote.\nAttributes changed:\n#{format_diff(diff)}"
+          message = "Local environment #{env.name} is different from remote.\nAttributes changed:\n#{format_diff(diff)}"
           if config.epic_fail
             ui.error message
             ui.error 'Make sure environments match each other before proceeding'
